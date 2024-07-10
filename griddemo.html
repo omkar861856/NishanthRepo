@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: hsl(210, 46%, 95%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-family: "Barlow Semi Condensed", sans-serif;
+            font-style: normal;
+            font-weight: 500, 600;
+        }
+
+        .container {
+            width: 80%;
+            height: 80%;
+            display: grid;
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+
+        }
+
+        .box {
+
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .item1 {
+
+            grid-column: span 2;
+            background-color: hsl(263, 55%, 52%);
+            color: hsl(0, 0%, 100%);
+            background-image: url('images/bg-pattern-quotation.svg');
+            background-repeat: no-repeat;
+            background-position-x: 70%;
+
+
+        }
+
+        .item2 {
+
+            background-color: hsl(217, 19%, 35%);
+            color: hsl(0, 0%, 100%);
+
+        }
+
+
+        .item3 {
+
+            grid-row: span 2;
+            background-color: hsl(0, 0%, 100%);
+
+
+        }
+
+        .item4 {
+            background-color: hsl(0, 0%, 100%);
+        }
+
+
+        .item5 {
+
+            grid-column: span 2;
+            background-color: hsl(219, 29%, 14%);
+            color: hsl(0, 0%, 100%);
+        }
+
+        .info {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .content1 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .content2,
+        .content3 {
+            margin: 0 10px;
+        }
+
+
+        @media screen and (max-width: 800px) {
+
+            .container {
+                width: 80%;
+                height: 70%;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+
+            .item1 {
+
+                grid-column: span 1;
+
+            }
+
+
+            .item3 {
+
+                grid-row: span 1;
+
+            }
+
+
+            .item5 {
+
+                grid-column: span 1;
+            }
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box item1">
+
+            <div class="info">
+                <img src="images\image-daniel.jpg" alt="profile_img" class="box_internal content1">
+                <div>
+                    <h3 class="box_internal content2">Daniel Clifford 1
+                    </h3>
+                    <p class="box_internal content3">Verified Graduate
+                    </p>
+                </div>
+            </div>
+            <h2 class="box_internal content4">"I received a job offer mid-course, and the subjects I learned were
+                current, if not more so, in the company I joined. I honestly feel I got every penny’s worth."</h2>
+            <div class="box_internal content5">"I was an EMT for many years before I joined the bootcamp. I’ve been
+                looking to make a transition and have heard some people who had an amazing experience here. I signed up
+                for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks
+                was the best – and most grueling – time of my life. Since completing the course, I’ve successfully
+                switched careers, working as a Software Engineer at a VR startup."</div>
+
+        </div>
+        <div class="box item2">
+            <div class="info">
+                <img src="images\image-jonathan.jpg" alt="profile_img" class="box_internal content1">
+                <div>
+                    <h3 class="box_internal content2">Jonathan Walters 2
+
+
+                    </h3>
+                    <p class="box_internal content3">Verified Graduate
+                    </p>
+                </div>
+            </div>
+            <h2 class="box_internal content4">"The team was very supportive and kept me motivated."
+
+            </h2>
+            <div class="box_internal content5">"I started as a total newbie with virtually no coding skills. I now work
+                as a mobile engineer for a big company. This was one of the best investments I’ve made in myself."</div>
+        </div>
+        <div class="box item3">
+            <div class="info">
+                <img src="images\image-kira.jpg" alt="profile_img" class="box_internal content1">
+                <div>
+                    <h3 class="box_internal content2">Kira Whittle 3
+
+
+                    </h3>
+                    <p class="box_internal content3">Verified Graduate
+                    </p>
+                </div>
+            </div>
+            <h2 class="box_internal content4">"Such a life-changing experience. Highly recommended!"</h2>
+            <div class="box_internal content5">"Before joining the bootcamp, I’ve never written a line of code. I needed
+                some structure from professionals who can help me learn programming step by step. I was encouraged to
+                enroll by a former student of theirs who can only say wonderful things about the program. The entire
+                curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for
+                assistance. The agile team project, in particular, was outstanding. It took my learning to the next
+                level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as
+                an example of my development experience. It certainly helped me land a job as a full-stack developer
+                after receiving multiple offers. 100% recommend!"</div>
+        </div>
+
+        <div class="box item4">
+            <div class="info">
+                <img src="images\image-jeanette.jpg" alt="profile_img" class="box_internal content1">
+                <div>
+                    <h3 class="box_internal content2">Jeanette Harmon 5
+
+
+                    </h3>
+                    <p class="box_internal content3">Verified Graduate
+                    </p>
+                </div>
+            </div>
+            <h2 class="box_internal content4">"An overall wonderful and rewarding experience."</h2>
+            <div class="box_internal content5">"Thank you for the wonderful experience! I now have a job I really enjoy,
+                and make a good living while doing something I love."</div>
+        </div>
+
+        <div class="box item5">
+            <div class="info">
+                <img src="images\image-patrick.jpg" alt="profile_img" class="box_internal content1">
+                <div>
+                    <h3 class="box_internal content2">Patrick Abrams 4
+
+
+                    </h3>
+                    <p class="box_internal content3">Verified Graduate
+                    </p>
+                </div>
+            </div>
+            <h2 class="box_internal content4">"Awesome teaching support from TAs who did the bootcamp themselves.
+                Getting guidance from them and learning from their experiences was easy."</h2>
+            <div class="box_internal content5">"The staff seem genuinely concerned about my progress which I find really
+                refreshing. The program gave me the confidence necessary to be able to go out in the world and present
+                myself as a capable junior developer. The standard is above the rest. You will get the personal
+                attention you need from an incredible community of smart and amazing people."
+
+            </div>
+        </div>
+        
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

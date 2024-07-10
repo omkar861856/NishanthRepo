@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: lightblue;
+        }
+        .container{
+            width: 80%;
+            height: 50%;
+            border: 2px solid black;
+            display: flex;
+        }
+        .items{
+            height: 50px;
+            border: 2px solid black;
+            margin: 2px;
+            text-align: center;
+        }
+        .item1{
+
+            flex: 0 0 50px;
+            
+        }
+        .item2{
+
+            flex: 0 0 100px;
+                        
+        }
+        .item3{
+
+            flex: 0 0 50px;
+            margin-left: auto ;
+
+            
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">Item1</div>
+        <div class="items item2">Item2</div>
+        <div class="items item3">item3</div>
+        <button onclick="window.location = 'griddemo.html'">Grid Demo</button>
+    </div>
+</body>
+</html>
