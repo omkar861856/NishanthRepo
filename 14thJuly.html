@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout additional</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        html{
+            width: 100vw;
+            height: 100vh;
+            background-color: aqua;            
+        }  
+        
+        body{
+            height: 100%;
+            width: 100%;
+            display: grid;
+            place-items: center;
+        }
+
+        .parent{
+            display: grid;
+            place-items: center;
+        }
+
+        .card{
+
+            width: clamp(23ch, 50%, 43ch);
+            display: flex;
+            flex-direction: column;            
+            height: auto;
+            background-color: white;
+            
+        }
+
+        .visual{
+            aspect-ratio: 26/9;
+            background-color: blue;
+        }
+
+       
+      
+
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+
+        <div class="card">
+            <h1>
+                Title
+            </h1>
+            <div class="visual"></div>
+            <p>repeat(auto-fit, minmax(150px, 1fr)): This combination creates as many columns as will fit into the container, with each column being at least 150px wide but able to grow to take up the remaining available space equally.
+                Behavior:
+                When there is enough space, multiple columns will be created, each at least 150px wide and sharing the remaining space equally.
+                When the container is smaller, the columns will shrink down to a minimum width of 150px each.
+                If the container is very small and can only fit one column, that column will be at least 150px wide.
+                
+                </p>
+        </div>
+        
+    </div>            
+
+    
+</body>
+</html>

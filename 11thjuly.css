@@ -1,0 +1,13 @@
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: auto;
+  font-style: italic;
+  background-color: lightgray;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

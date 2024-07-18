@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 70vw;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- GET PUT POST DELETE -->
+
+    <form name="user_inputs" action="" target="_blank" autocomplete="off" method="POST">
+        <!-- email -->
+        <label for="email">Email</label>
+
+        <input name="email" id="email" type="email" />
+        <!-- Password -->
+
+        <label for="password">Password</label>
+
+        <input name="password" id="password" type="password">
+
+        <!--  -->
+
+
+
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>       
+      
+
+
+        <!--  -->
+
+        <input type="button" value="Button">
+
+        <input type="datetime-local" name="date" id="">
+
+        <input type="color" name="color" id="">
+
+        <input type="file" name="file" id="">
+
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language1" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        <input type="range" name="range" id="">
+
+        <input type="tel" name="" id="">
+
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+
+        <select name="courses" id="courses" size="3" multiple>
+            <option value="html">HTML</option>
+            <option value="css" selected>CSS</option>
+            <option value="js">JS</option>
+        </select>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            <input type="checkbox" id="agree" name="agree" value="agree">
+            <label for="agree">I agree to the terms and conditions</label><br>
+            <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+            <label for="subscribe">Subscribe to our newsletter</label>
+        </fieldset>
+
+        
+
+
+        <!-- submit the form -->
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
+
+<!-- {
+    email: email,
+    password: password,
+    gender: gender,
+    courses: ["html", "css"]
+    date: date,
+    color: color,
+    fav_language: fav_language,
+    fav_language1: fav_language1,
+    range: range,
+    tel: tel
+} -->

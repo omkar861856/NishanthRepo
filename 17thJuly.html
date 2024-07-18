@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .nobox{
+            box-sizing: content-box;
+            border: 2px solid black;
+            width: calc(199px+400px)
+        }
+
+        .nobox{
+            color: blue !important;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <h1>forms</h1>
+    <div style="color: black;" class="nobox">
+        <div>hi i am important styling</div>
+        <p></p>
+        <img src="" alt="">
+    </div>
+
+    <form action="https://6666e9e8a2f8516ff7a57eb4.mockapi.io/User" method="post">
+
+
+        <label style="color:red" for="name">Name: </label>
+        <input type="text" name="name" id="name" disabled>
+
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+
+        <br>
+
+        <label for="contact">Contact</label>
+        <input type="number" name="contact" id="contact" readonly value="0000000000">
+
+        <br>
+
+        <label for="location">Location</label>
+        <select name="location" id="location">
+            <option value="ka">KA</option>
+            <option value="mh">MH</option>
+            <option value="kl">KL</option>
+        </select>
+
+        <hr>
+
+        <label for="qualification">Qualification</label>
+        <select name="qualification" id="qualification">
+            <option value="ssc">SSC</option>
+            <option value="hsc" selected>HSC</option>
+            <option value="grad">Grad.</option>
+        </select>
+
+
+        <br>
+
+        <h3>Full Stack</h3>
+
+        <label for="full_stack">Full Stack</label>
+        <input type="radio" name="course" id="full_stack">
+        <label for="fe">FE</label>
+        <input type="radio" name="course" id="fe">
+        <label for="be">BE</label>
+        <input type="radio" name="course" id="be">
+
+
+        <hr>
+
+        <label for="questions">Questions</label>
+        <textarea name="questions" id="questions" cols="30" rows="10"></textarea>
+
+        <hr>
+
+        <input type="checkbox" name="tnc" id="tnc">
+        <label for="tnc">I agree with the terms and conditions</label>
+
+        <br>
+        <br>
+        <br>
+
+        <input type="submit" value="Submit Now" formnovalidate="formnovalidate">
+
+
+    </form>
+
+
+
+
+
+</body>
+
+</html>
