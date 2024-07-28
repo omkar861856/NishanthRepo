@@ -101,7 +101,7 @@ function sumAll(...numbers) {
 
 console.log(sumAll(...myArr3));
 
-// block scope with let and const
+
 
 
 
